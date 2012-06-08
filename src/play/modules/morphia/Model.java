@@ -301,10 +301,12 @@ public class Model implements Serializable, play.db.Model {
     }
 
     public final void setId(Object id) {
+		/* No check model id. Easy to replace by a new object to a entity.
         if (null != getId()) {
             throw new IllegalStateException(
                     "Cannot set ID to entity with ID presented");
         }
+		*/
         setId_(id);
     }
 
